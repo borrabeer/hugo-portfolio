@@ -1,0 +1,209 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Worapath's Portfolio
+theme: "hugo-profile"
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Worapath's Portfolio"
+  description: "Welcome to my portfolio!"
+  favicon: "fav.png"
+
+  useBootstrapCDN: false
+
+  mathjax: false
+
+  animate: true
+
+  theme:
+    defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  navbar:
+    align: ms-auto
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Worapath"
+    subtitle: "I'm a Full-Stack Developer"
+    content: "I'm a Full-Stack Developer with a passion for web and game development. I have experience in both front-end and back-end development, and I'm always looking for new challenges to tackle."
+    image: "/images/default-avatar.jpg"
+    bottomImage:
+      enable: true
+    roundImage: true
+    button:
+      enable: true
+      name: "Resume"
+      url: "/files/resume.pdf"
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://www.github.com/borrabeer
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/borrabeer/
+        
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/default-avatar.jpg"
+    content: |-
+      I am a Full-Stack Developer with a passion for web and game development. I have experience in both front-end and back-end development, and I'm always looking for new challenges to tackle. I am a quick learner and a problem solver, and I enjoy working in a fast-paced and collaborative environment.
+
+      I have contribute to an open-source project called [Transmutation](https://github.com/spellbook-technology/transmutation) which is a Ruby gem that provides a simple way to serialize Ruby objects into JSON.
+
+      I have been using these skills lately, but there are also other skills that I haven't added to the list. However, I am always eager to learn new skills and programming languages.
+    skills:
+      enable: true
+      items:
+        - "JavaScript"
+        - "TypeScript"
+        - "Node"
+        - "NestJS"
+        - "React"
+        - "React-Native"
+        - "Ruby on Rails"
+
+  experience:
+    enable: true
+    items:
+      - job: "Senior Software Engineer"
+        company: "Spellbook Technology"
+        companyUrl: "https://www.spellbook.tech/"
+        date: "Oct 2023 - May 2024"
+        content: |-
+          - Developed and maintained resilient back-end services, ensuring optimized forecast information delivery with fallback tolerance.
+          - Implemented a Content Management System (CMS) for publishing official articles, enhancing the main website's content management.
+          - Acquired proficiency in Ruby and Ruby on Rails, contributing to team skill diversity.
+          - Created and maintained an open-source Ruby gem for customizable JSON serialization, enhancing data handling efficiency.
+      - job: "Software Engineer"
+        company: "LSEG"
+        companyUrl: "https://www.lseg.com/"
+        date: "Jun 2022 - Aug 2023"
+        content: |-
+          - Developed and maintained back-end microservices as part of the Backend-For-Frontend (BFF) pattern, efficiently delivering optimized and transformed financial information to the mobile application.
+          - Implemented and maintained the push notification service, integrating with AWS services like SNS, SQS, and DynamoDB, ensuring timely delivery of alert messages to client devices.
+          - Developed and maintained a service integrated with SQS and Redis, implementing a pre-caching strategy to enhance data retrieval and system performance.
+          - Implemented new features with optimized calculations, ensuring the delivery of reliable, robust, and high-performance services to end-users.
+          - Investigated and monitored services with Datadog integrations, contributing to the overall health and stability of the system.
+          - Investigated and successfully resolved a long-standing critical bug that had been present for several years, arising from the restructuring of the pre-caching services. The resolution significantly improved system efficiency and user experience, positively impacting overall platform performance.
+      - job: "Software Engineer"
+        company: "SHIPPOP"
+        companyUrl: "https://www.shippop.com/"
+        date: "2021 - 2022"
+        content: |-
+          - Spearheaded the inception of the SHIPPOP GLOBAL project, contributing to its foundation and vision.
+          - Designed the systems architecture of an innovative international logistics platform, incorporating adapter, factory pattern, and event-driven architecture for optimal performance and scalability.
+          - Led the design and implementation of the project's infrastructure, leveraging the Microsoft Azure Platform to build a robust foundation (Azure Web App, Azure Virtual Network, Azure DevOps, Azure Redis, Azure Sentinel).
+          - Designed and implemented the data model and API management for member and wallet services, adopting a microservices architecture to enhance flexibility and maintainability.
+          - Played a vital role in redesigning the systems architecture, resulting in an innovative and cutting-edge logistics platform. The adoption of new technology designs inspired by Stelace paved the way for improved efficiency and customer satisfaction.
+      - job: "Software Engineer Internship"
+        company: "SHIPPOP"
+        companyUrl: "https://www.shippop.com/"
+        date: "Jun 2021 - Nov 2021"
+        content: |-
+          - Designed systems architecture to efficiently serve complex business requirements, ensuring scalability and reliability.
+          - Implemented API endpoints and webhooks with a strong focus on robustness and fault tolerance, providing seamless data integration and communication.
+          - Contributed to crucial features that addressed significant customers' needs, enhancing the overall user experience and driving customer satisfaction.
+
+  education:
+    enable: true
+    items:
+      - title: "Bachelor of Science - BSc, Information Technology"
+        school:
+          name: "King Mongkut's Institute of Technology Ladkrabang"
+          url: "https://www.kmitl.ac.th/"
+        date: "2018 - 2022"
+        GPA: "Second Class Honors"
+        
+  projects:
+    enable: true
+    items:
+      - title: "Transmutation"
+        content: Transmutation is a Ruby gem that provides a simple way to serialize Ruby objects into JSON. It aims to be a performant and elegant solution for serializing Ruby objects into JSON, with a touch of opinionated "magic" ✨.
+        image: "/images/projects/transmutation.png"
+        badges:
+          - "Ruby"
+          - "Ruby on Rails"
+          - "Open Source"
+        links:
+          - icon: fab fa-github
+            url: "https://www.github.com/spellbook-technology/transmutation"
+      - title: "E-Commerce Website"
+        content: A full-stack e-commerce website that allows users to browse products, add them to their cart, and checkout. It also provides an admin interface for managing products, orders, and users.
+        image: "images/projects/ecommerce.png"
+        badges:
+          - "React"
+          - "GraphQL"
+          - "MongoDB"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/borrabeer/Fullstack-Ecommerce"
+      - title: "OnQueue"
+        content: A mobile application that allows users to queue up for their favorite restaurants. It also allows admins to manage the queue and notify users when their table is ready.
+        image: "images/projects/onqueue.png"
+        badges:
+          - "React-Native"
+          - "Python"
+          - "Django"
+          - "PostgreSQL"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/borrabeer/OnQueue"
+      - title: "Clinic Treatment History System"
+        content: A web application that allows users to keep track of the patient treatment history. It provides a user-friendly interface for users to manage and view the treatment history of patients.
+        image: "images/projects/CTHS.png"
+        badges:
+          - "Python"
+          - "Django"
+        links:
+          - icon: fab fa-github
+            url: "https://github.com/borrabeer/Clinic-Treatment-History-System"
+
+  contact:
+    enable: true
+    content: |-
+      If you'd like to get in touch with me, feel free to send me an email! I'm always open to new opportunities and collaborations.
+    btnName: "Contact Me"
+    btnLink: mailto:borrabeer@outlook.com
+
+  footer:
+    socialNetworks:
+      github: "https://www.github.com/borrabeer"
+      linkedin: "https://www.linkedin.com/in/borrabeer/"
+      facebook: "https://facebook.com/borra.beerr"
+        
