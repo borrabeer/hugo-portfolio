@@ -42,7 +42,7 @@ params:
 
   navbar:
     align: ms-auto
-    disableSearch: false
+    disableSearch: true
     stickyNavBar:
       enable: true
       showOnScrollUp: true
